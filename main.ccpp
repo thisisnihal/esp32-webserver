@@ -1,0 +1,14 @@
+#include "WebServer.h"
+
+const char* ssid = "SSID";
+const char* password = "WIFI_PASSWORD";
+const int sdCsPin = 5;  
+
+WebServer webServer(ssid, password, sdCsPin);
+
+void setup() {
+    webServer.begin();
+}
+
+void loop() {
+}
